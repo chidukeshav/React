@@ -233,33 +233,40 @@ import React, { useState } from 'react'
 import "./app.css"
 
 const App = () => {
+
     let[state,setState]=useState(null)
-    let handleClick=()=>{
-        setState()
-
+    let red=(e)=>{
+        e.stopPropagation()
+        setState('red')
+        x.innerHTML='red'
     }
-    let handleClick1=()=>{
-
-
+     let blue=(e)=>{
+        e.stopPropagation()
+        setState('blue')
+        x.innerHTML='blue'
     }
-     let handleClick2=()=>{
-
+     let green=(e)=>{
+        e.stopPropagation()
+        setState('green')
+        x.innerHTML='green'
     }
 
   return (
      <div id='black'>
         <div id='container'>
             <div className='box1'>
-                <div  className='inbox1'>
-                    <button onClick={handleClick}></button>
+                <div onClick={red}  className='inbox1'>
+                    
                     
                 </div>
-                <div className='inbox2'>
-                    <button onClick={handleClick1}></button>
+                <div onClick={blue} className='inbox2'>
+                    
                 </div>
-                <div className='inbox3'><button onClick={handleClick2}></button></div>
+                <div onClick={green} className='inbox3'>
+                    
+                </div>
             </div>
-            <div  className='box2'>
+            <div style={{ backgroundColor: state }} className='box2'>
 
             </div>
         </div>
