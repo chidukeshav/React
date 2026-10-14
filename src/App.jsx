@@ -1,0 +1,272 @@
+// import React,{Component} from "react";
+// import Nav from "./CBC/Nav";
+// import "./app.css"
+// export default class App extends Component{
+//   render(){
+//     return(
+//       <div>
+//         <Nav>
+
+//         </Nav>
+//       </div>
+//     )
+// }
+// }
+
+
+// *****************************************************************
+// import React from 'react'
+// import "./app.css"
+// import Nav from './FBC/Nav'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Nav id='nav'>
+        
+//       </Nav>
+//     </div>
+//   )
+// }
+
+// export default App
+// *****************************************************************************
+
+// States
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(){
+//     super()
+//     this.state={
+//       subject:"JAVASCRIPT"
+//     }
+//   }
+//   handleClick=()=>{
+//     this.setState({subject:"REACTJS"})
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.subject}</h1>
+//         <button onClick={this.handleClick}>CLICK</button>
+//       </div>
+//     )
+//   }
+// }
+
+
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(){
+//     super()
+//     this.state={
+//       count:0
+//     }
+//   }
+//   handleClick=()=>{
+//     this.setState({count:this.state.count+1})
+//  if(this.state.count>=0&&this.state.count<=5){
+//       document.body.style.background="red"
+//     }
+//      if(this.state.count>=6&&this.state.count<=10){
+//       document.body.style.background="blue"
+//     }
+//      if(this.state.count>=11){
+//       document.body.style.background="green"
+//     }
+//   }
+//    handleClick1=()=>{
+//     this.setState({count:this.state.count-1})
+//     if(this.state.count>=0&&this.state.count<=5){
+//       document.body.style.background="red"
+//     }
+//      if(this.state.count>=6&&this.state.count<=10){
+//       document.body.style.background="blue"
+//     }
+//      if(this.state.count>=11){
+//       document.body.style.background="green"
+//     }
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.count}</h1>
+//         <button onClick={this.handleClick}>Increment</button>
+//         <button onClick={this.handleClick1}>Decrement</button>
+//       </div>
+//     )
+//   }
+// }
+
+// import React, { Component } from 'react'
+// import ON from './photos/on.jpg'
+// import OFF from './photos/off.jpg'
+
+// export default class App extends Component {
+//   constructor(){
+//     super()
+
+//     this.state={
+//       bulb:OFF
+//     }
+    
+//   }
+//   handleBulb=()=>{
+//     this.setState({bulb:ON})
+//   }
+//   handleBulb1=()=>{
+//     this.setState({bulb:OFF})
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <img height={200} width={200} src={ this.state.bulb} alt="" />
+//         <button onClick={this.handleBulb}>on</button>
+//         <button onClick={this.handleBulb1}>Of</button>
+//       </div>
+//     )
+//   }
+// }
+
+// import React, { Component } from 'react'
+// import VIDEO from './Video/virat.mp4'
+// import { FaGooglePlay } from "react-icons/fa";
+// import { FaPauseCircle } from "react-icons/fa";
+// export default class App extends Component {
+//   constructor(){
+//     super()
+//     this.state={
+//       video:true
+//     }
+//   }
+//   handleplay=()=>{
+//     this.setState({video:!this.state.video})
+//     this.max=document.getElementById("max")
+//     if(this.state.video==true){
+//       this.max.play()
+  
+//     // this.setState({video:VIDEO})
+//   }
+//   else{
+//     this.max.pause()
+//   }
+// }
+//   render() {
+//     return (
+//       <div>
+//        <video id="max" height={300} width={150} src={VIDEO}></video>
+//         <button onClick={this.handleplay}>
+//           {this.state.video ? <FaGooglePlay></FaGooglePlay>:< FaPauseCircle ></FaPauseCircle>}
+//         </button>
+//       </div>
+//     )
+//   }
+// }
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   let [state,setState]=useState("JAVASCRIPT")
+//   let handleClick=()=>{
+//     setState("REACT")
+//   }
+//   return (
+//     <div>
+//       <h1>{state}</h1>
+//       <button onClick={handleClick}>Click</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   let[state,setState]=useState(0)
+//   let handleClick=()=>{
+//     setState(state+1)
+//   }
+//   let handleClick1=()=>{
+//     setState(state-1)
+//   }
+//   return (
+//     <div>
+//       <h1>{state}</h1>
+//       <button onClick={handleClick}> Increment</button>
+//       <button onClick={handleClick1}>Decrement</button>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, { use, useState } from 'react'
+// import VID from "./Video/virat.mp4"
+// const App = () => {
+//     let[state,setState]=useState(true)
+//         let handleplay=()=>{
+//             setState(!state)
+//             let max=document.getElementById("max")
+//             if(state){
+//                 max.play()
+                
+//             }
+//             else{
+//                 max.pause()
+//             }
+//         }
+    
+//   return (
+//     <div>
+//         <video id='max' width={150} height={330} src={VID}></video>
+//         <button onClick={handleplay}>pause</button>
+//     </div>
+//   )
+// }
+
+import React, { useState } from 'react'
+import "./app.css"
+
+const App = () => {
+    let[state,setState]=useState(null)
+    let handleClick=()=>{
+        setState()
+
+    }
+    let handleClick1=()=>{
+
+
+    }
+     let handleClick2=()=>{
+
+    }
+
+  return (
+     <div id='black'>
+        <div id='container'>
+            <div className='box1'>
+                <div  className='inbox1'>
+                    <button onClick={handleClick}></button>
+                    
+                </div>
+                <div className='inbox2'>
+                    <button onClick={handleClick1}></button>
+                </div>
+                <div className='inbox3'><button onClick={handleClick2}></button></div>
+            </div>
+            <div  className='box2'>
+
+            </div>
+        </div>
+    </div>
+  )
+}
+export default App
+
+
+

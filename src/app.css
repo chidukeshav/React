@@ -1,0 +1,297 @@
+/* #nav{
+    border: 2px solid red;
+    height: 200px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#div{
+    border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#cart{
+    
+ border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+   
+   
+
+
+}
+.cartcart1{
+    border: 1px solid red;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.e{
+    border: 1px solid red;
+    height: 70%;
+    width: 40%;
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.z{
+    border: 1px solid red;
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#f{
+    border: 1px solid red;
+    height: 80%;
+    width: 60%;
+}
+.cartcartcart{
+    border: 1px solid red;
+    width: 60%;
+    height: 30%;
+    
+   
+    
+}
+.cartcartbox{
+    border: 1px solid red;
+    height: 80%;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cb{
+     border: 1px solid red;
+    height: 80%;
+    width: 70%;
+    display: flex;
+     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#c{
+      border: 1px solid red;
+      border-radius: 50%;
+      height: 70%;
+      width: 30%;
+      
+      
+}
+#a{
+    border: 1px solid red;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#b{
+    border: 1px solid red;
+    height: 40%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home{
+    
+ border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+
+}
+
+#box1{
+    border: 1px solid red;
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#box2{
+    border: 1px solid red;
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#innerbox{
+    border: 1px solid black;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+}
+#innerboxx{
+    border: 1px solid black;
+    height: 60%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+#cartbox1{
+    border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+}
+#cartbox2{
+    border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+#cartbox3{
+    border: 1px solid red;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+} 
+#homebox{
+    border: 1px solid red;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#homebox111{
+    border: 1px solid red;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.homebox11{
+    border: 1px solid red;
+    height: 40%;
+    width: 80%;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.homeboxxx{
+    border: 1px solid black;
+    height: 40%;
+    width: 30%;
+}
+.round{
+    border: 1px solid;
+    height: 49%;
+    width: 30%;
+    border-radius: 50%;
+}
+
+/* .cartcart1{
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+   
+    
+} */ 
+body{
+    background-color: black;
+}
+
+#black{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.box1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+.box2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+.inbox1{
+    height: 32%;
+    width: 100%;
+     border: 1px solid red;
+     background-color: red;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inbox2{
+    height: 32%;
+    width: 100%;
+     border: 1px solid red;
+     background-color: green;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inbox3{
+    height: 32%;
+    width: 100%;
+     border: 1px solid red;
+     background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
