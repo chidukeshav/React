@@ -229,51 +229,82 @@
 //   )
 // }
 
-import React, { useState } from 'react'
-import "./app.css"
+// import React, { useState } from 'react'
+// import "./app.css"
+
+// const App = () => {
+
+//     let[state,setState]=useState(null)
+//     let red=(e)=>{
+//         e.stopPropagation()
+//         setState('red')
+//         x.innerHTML='red'
+//     }
+//      let blue=(e)=>{
+//         e.stopPropagation()
+//         setState('blue')
+//         x.innerHTML='blue'
+//     }
+//      let green=(e)=>{
+//         e.stopPropagation()
+//         setState('green')
+//         x.innerHTML='green'
+//     }
+
+//   return (
+//      <div id='black'>
+//         <div id='container'>
+//             <div className='box1'>
+//                 <div onClick={red}  className='inbox1'>
+                    
+                    
+//                 </div>
+//                 <div onClick={blue} className='inbox2'>
+                    
+//                 </div>
+//                 <div onClick={green} className='inbox3'>
+                    
+//                 </div>
+//             </div>
+//             <div style={{ backgroundColor: state }} className='box2'>
+
+//             </div>
+//         </div>
+//     </div>
+//   )
+// }
+// export default App
+
+
+// import React, { useState } from 'react'
+// import "./app.css"
+
+// const Task2 = () => {
+//     let [color,setColor] = useState('')
+//     let handlekey = (e)=>{
+//         // console.log("e.key--"+e.key);
+//         // console.log("e.target.value--"+e.target.value)
+//         setColor(e.target.value)
+//     }
+//   return (
+//     <div id='container' style={{backgroundColor:color}}>
+//         <input type="text" name="" id="inp" onKeyUp={handlekey}/>
+//     </div>
+//   )
+// }
+// export default Task2
+
+//props
+import React from 'react'
+import Userdata from './props/Userdata'
+import USER from './props/User.json'
 
 const App = () => {
-
-    let[state,setState]=useState(null)
-    let red=(e)=>{
-        e.stopPropagation()
-        setState('red')
-        x.innerHTML='red'
-    }
-     let blue=(e)=>{
-        e.stopPropagation()
-        setState('blue')
-        x.innerHTML='blue'
-    }
-     let green=(e)=>{
-        e.stopPropagation()
-        setState('green')
-        x.innerHTML='green'
-    }
-
   return (
-     <div id='black'>
-        <div id='container'>
-            <div className='box1'>
-                <div onClick={red}  className='inbox1'>
-                    
-                    
-                </div>
-                <div onClick={blue} className='inbox2'>
-                    
-                </div>
-                <div onClick={green} className='inbox3'>
-                    
-                </div>
-            </div>
-            <div style={{ backgroundColor: state }} className='box2'>
-
-            </div>
-        </div>
+    <div>
+      <Userdata max={USER}></Userdata>
     </div>
   )
 }
+
 export default App
-
-
-
