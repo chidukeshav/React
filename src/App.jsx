@@ -295,14 +295,34 @@
 // export default Task2
 
 //props
-import React from 'react'
-import Userdata from './props/Userdata'
-import USER from './props/User.json'
+// import React from 'react'
+// import Userdata from './props/Userdata'
+// import USER from './props/User.json'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Userdata max={USER}></Userdata>
+//     </div>
+//   )
+// }
+
+// export default App
+import React, { useState } from 'react'
+import json from './video.json'
+import Container from './YOUTUBE/Container'
 
 const App = () => {
+  let[state,setState]=useState(json)
+  let[vid,setVid]=useState(null)
+  function mac(ma){
+    setVid(ma)
+    // alert(ma)
+    
+  }
   return (
     <div>
-      <Userdata max={USER}></Userdata>
+      <Container mac={mac} max={state} lio={vid}></Container>
     </div>
   )
 }
