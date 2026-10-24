@@ -308,23 +308,23 @@
 // }
 
 // export default App
-import React, { useState } from 'react'
-import json from './video.json'
-import Container from './YOUTUBE/Container'
+// import React, { useState } from 'react'
+// import json from './video.json'
+// import Container from './YOUTUBE/Container'
 
-const App = () => {
-  let[state,setState]=useState(json)
-  let[vid,setVid]=useState(null)
-  function mac(ma){
-    setVid(ma)
-    // alert(ma)
+// const App = () => {
+//   let[state,setState]=useState(json)
+//   let[vid,setVid]=useState(null)
+//   function mac(ma){
+//     setVid(ma)
+//     // alert(ma)
     
-  }
-  return (
-    <div>
-      <Container mac={mac} max={state} lio={vid}></Container>
-    </div>
-  )
-}
+//   }
+//   return (
+//     <div>
+//       <Container mac={mac} max={state} lio={vid}></Container>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
