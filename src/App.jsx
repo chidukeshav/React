@@ -330,17 +330,71 @@
 // export default App
 
 //CBC
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(){
+//     super()
+
+//     this.state={
+//       count:0
+//     }
+//   }
+//     handleclick=()=>{
+//       this.setState({count:this.state.count+1})
+//     }
+//     // componentDidMount=()=>{
+//     //   alert("hiii")
+//     // }
+//     // componentDidUpdate=()=>{
+//     //   alert("hello")
+//     // }
+//     componentWillUnmount=()=>{
+//       alert("hhhhhh")
+//     }
+//   render() {
+
+//     return (
+//       <div>
+//         <h1>{this.state.count}</h1>
+//         <button onClick={this.handleclick}>click</button>
+//       </div>
+//     )
+//   }
+// }
 import React, { Component } from 'react'
 
 export default class App extends Component {
   constructor(){
     super()
-    
+    this.state={
+      delete:false
+
+    }
+
   }
   render() {
-
     return (
-      <div>App</div>
+      <div>
+        <h1>magic:</h1>
+        <button onClick={()=>{this.setState({delete:true})}}> Delete All</button>
+        {
+          this.state.delete==true?null:<Data></Data>
+        }
+      </div>
+    )
+  }
+}
+class Data extends Component{
+  componentWillUnmount=()=>{
+    alert("i will delete")
+  }
+  render(){
+    return(
+      
+        <div>
+          <h1>name is chidu</h1>
+        </div>
     )
   }
 }
