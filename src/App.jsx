@@ -317,6 +317,7 @@
 // import React from 'react'
 // import Userdata from './props/Userdata'
 // import USER from './props/User.json'
+// import "./props/props.css"
 
 // const App = () => {
 //   return (
@@ -327,20 +328,6 @@
 // }
 // export default App
 
-import React from 'react'
-import Userdata from './props/Userdata'
-import USER from './props/User.json'
-
-
-const App = () => {
-  return (
-    <div>
-      <Userdata max={USER}></Userdata>
-    </div>
-  )
-}
-
-export default App
 
 
 
@@ -353,19 +340,20 @@ export default App
 // const App = () => {
 //   let[state,setState]=useState(json)
 //   let[vid,setVid]=useState(null)
-//   function mac(ma){
-//     setVid(ma)
-    // alert(ma)
+//   // function mac(ma){
+//   //   setVid(ma)
+//   //   alert(ma)
     
-//   }
+//   // }
 //   return (
+
 //     <div>
 //       <Container mac={mac} max={state} lio={vid}></Container>
 //     </div>
 //   )
 // }
 
-//export default App
+// export default App
 
 //CBC
 // ---------------------------------------------------------------
