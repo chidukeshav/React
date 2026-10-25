@@ -32,7 +32,7 @@
 // export default App
 // *****************************************************************************
 
-// States
+//States
 // import React, { Component } from 'react'
 
 // export default class App extends Component {
@@ -293,7 +293,7 @@
 //   )
 // }
 // export default Task2
-
+// ********************************************************************************
 //props
 // import React from 'react'
 // import Userdata from './props/Userdata'
@@ -330,6 +330,7 @@
 // export default App
 
 //CBC
+// ---------------------------------------------------------------
 // import React, { Component } from 'react'
 
 // export default class App extends Component {
@@ -362,6 +363,7 @@
 //     )
 //   }
 // }
+// ***********************************
 // import React, { Component } from 'react'
 
 // export default class App extends Component {
@@ -413,5 +415,30 @@
 //       </div>
 //     )
 //   }
-// }**************************************************************
+// }
+// **************************************************************
+//Practice 
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  constructor(){
+    super()
+    this.state={
+      subject:"JavaScript"
+
+    }
+
+  }
+ handleclick=()=>{
+      this.setState({subject:"React"})
+ }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.subject}</h1>
+        <button onClick={this.handleclick}>Click</button>
+      </div>
+    )
+  }
+}
 
