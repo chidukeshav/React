@@ -417,26 +417,59 @@
 //   }
 // }
 // **************************************************************
-//Practice 
+// //Practice 
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(){
+//     super()
+//     this.state={
+//       subject:"JavaScript"
+
+//     }
+
+//   }
+//  handleclick=()=>{
+//       this.setState({subject:"React"})
+//  }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.subject}</h1>
+//         <button onClick={this.handleclick}>Click</button>
+//       </div>
+//     )
+//   }
+// }
 import React, { Component } from 'react'
 
 export default class App extends Component {
   constructor(){
     super()
     this.state={
-      subject:"JavaScript"
-
+      count:0
     }
-
   }
- handleclick=()=>{
-      this.setState({subject:"React"})
- }
+  handleclick=()=>{
+    this.setState({count:this.state.count+1})
+    if(this.state.count>5){
+      document.body.style.backgroundColor='red'
+      
+    }
+  }
+   handleclick1=()=>{
+    this.setState({count:this.state.count-1})
+     if(this.state.count<5){
+      document.body.style.backgroundColor='blue'
+      
+    }
+  }
   render() {
     return (
       <div>
-        <h1>{this.state.subject}</h1>
-        <button onClick={this.handleclick}>Click</button>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.handleclick}>Increment</button>
+        <button onClick={this.handleclick1}>Decrement</button>
       </div>
     )
   }
