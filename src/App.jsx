@@ -362,39 +362,56 @@
 //     )
 //   }
 // }
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-export default class App extends Component {
-  constructor(){
-    super()
-    this.state={
-      delete:false
+// export default class App extends Component {
+//   constructor(){
+//     super()
+//     this.state={
+//       delete:false
 
-    }
+//     }
 
-  }
-  render() {
-    return (
-      <div>
-        <h1>magic:</h1>
-        <button onClick={()=>{this.setState({delete:true})}}> Delete All</button>
-        {
-          this.state.delete==true?null:<Data></Data>
-        }
-      </div>
-    )
-  }
-}
-class Data extends Component{
-  componentWillUnmount=()=>{
-    alert("i will delete")
-  }
-  render(){
-    return(
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>magic:</h1>
+//         <button onClick={()=>{this.setState({delete:true})}}> Delete All</button>
+//         {
+//           this.state.delete==true?null:<Data></Data>
+//         }
+//       </div>
+//     )
+//   }
+// }
+// class Data extends Component{
+//   componentWillUnmount=()=>{
+//     alert("i will delete")
+//   }
+//   render(){
+//     return(
       
-        <div>
-          <h1>name is chidu</h1>
-        </div>
-    )
-  }
-}
+//         <div>
+//           <h1>name is chidu</h1>
+//         </div>
+//     )
+//   }
+// }
+// ****************************************************
+// import React, { Component } from 'react'
+// import Product from './WORK1/Product'
+
+// export default class 
+// hi extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Product></Product>
+//         <Product></Product>
+//         <Product></Product>
+//       </div>
+//     )
+//   }
+// }**************************************************************
+
