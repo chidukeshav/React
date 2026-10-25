@@ -99,7 +99,7 @@
 //     )
 //   }
 // }
-
+// ***********************************************************
 // import React, { Component } from 'react'
 // import ON from './photos/on.jpg'
 // import OFF from './photos/off.jpg'
@@ -130,7 +130,7 @@
 //     )
 //   }
 // }
-
+// ***********************************************************************
 // import React, { Component } from 'react'
 // import VIDEO from './Video/virat.mp4'
 // import { FaGooglePlay } from "react-icons/fa";
@@ -182,6 +182,10 @@
 // }
 
 // export default App
+// *******************************************************************
+
+
+
 
 // import React, { useState } from 'react'
 
@@ -204,6 +208,9 @@
 // }
 
 // export default App
+
+// ****************************************************************************
+
 
 
 // import React, { use, useState } from 'react'
@@ -229,6 +236,10 @@
 //     </div>
 //   )
 // }
+// ************************************************************
+
+
+
 
 // import React, { useState } from 'react'
 // import "./app.css"
@@ -243,13 +254,13 @@
 //     }
 //      let blue=(e)=>{
 //         e.stopPropagation()
-//         setState('blue')
-//         x.innerHTML='blue'
+//         setState('green')
+//         x.innerHTML='green'
 //     }
 //      let green=(e)=>{
 //         e.stopPropagation()
-//         setState('green')
-//         x.innerHTML='green'
+//         setState('blue')
+//         x.innerHTML='blue'
 //     }
 
 //   return (
@@ -443,3 +454,23 @@
 //   }
 // }
 
+import React, { useState } from 'react'
+
+const App = () => {
+  let[state,setstate]=useState(0)
+  let handleclick=()=>{
+    setstate(state+1)
+  }
+   let handleclick1=()=>{
+    setstate(state-1)
+  }
+  return (
+    <div>
+      <h1>{state}</h1>
+      <button on onClick={handleclick}>Inc</button>
+      <button on onClick={handleclick1}>decnc</button>
+    </div>
+  )
+}
+
+export default App
