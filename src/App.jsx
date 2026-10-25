@@ -165,6 +165,7 @@
 //     )
 //   }
 // }
+// *******************************************************************
 // import React, { useState } from 'react'
 
 // const App = () => {
@@ -441,37 +442,42 @@
 //     )
 //   }
 // }
+
 import React, { Component } from 'react'
+import VIDEO from './Video/virat.mp4'
 
 export default class App extends Component {
   constructor(){
     super()
-    this.state={
-      count:0
+    
+      this.state={
+        video:true
+      }
+
+  
+   }
+  
+   handleplay=()=>{
+    this.max=document.getElementById("max")
+    //this.setState({video:!this.state.video})
+    
+    if(this.state.video===true){
+      this.max.play()
+      this.setState({video:false})
     }
-  }
-  handleclick=()=>{
-    this.setState({count:this.state.count+1})
-    if(this.state.count>5){
-      document.body.style.backgroundColor='red'
-      
+    else{
+      this.max.pause()
+      this.setState({video:true})
     }
-  }
-   handleclick1=()=>{
-    this.setState({count:this.state.count-1})
-     if(this.state.count<5){
-      document.body.style.backgroundColor='blue'
-      
-    }
-  }
+   }
   render() {
     return (
       <div>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.handleclick}>Increment</button>
-        <button onClick={this.handleclick1}>Decrement</button>
+        <video id='max' height={400} width={400} src={VIDEO}></video>
+        <button onClick={this.handleplay}>Play</button>
+        <button onClick={this.handleplay}>Pause</button>
+
       </div>
     )
   }
 }
-
