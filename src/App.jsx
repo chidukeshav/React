@@ -294,8 +294,10 @@
 // const Task2 = () => {
 //     let [color,setColor] = useState('')
 //     let handlekey = (e)=>{
-//         // console.log("e.key--"+e.key);
-//         // console.log("e.target.value--"+e.target.value)
+       
+      
+
+
 //         setColor(e.target.value)
 //     }
 //   return (
@@ -305,6 +307,11 @@
 //   )
 // }
 // export default Task2
+
+
+
+
+
 // ********************************************************************************
 //props
 // import React from 'react'
@@ -318,8 +325,27 @@
 //     </div>
 //   )
 // }
-
 // export default App
+
+import React from 'react'
+import Userdata from './props/Userdata'
+import USER from './props/User.json'
+
+
+const App = () => {
+  return (
+    <div>
+      <Userdata max={USER}></Userdata>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+// ***********************************************************************
 // import React, { useState } from 'react'
 // import json from './video.json'
 // import Container from './YOUTUBE/Container'
@@ -329,7 +355,7 @@
 //   let[vid,setVid]=useState(null)
 //   function mac(ma){
 //     setVid(ma)
-//     // alert(ma)
+    // alert(ma)
     
 //   }
 //   return (
@@ -339,7 +365,7 @@
 //   )
 // }
 
-// export default App
+//export default App
 
 //CBC
 // ---------------------------------------------------------------
@@ -454,23 +480,4 @@
 //   }
 // }
 
-import React, { useState } from 'react'
 
-const App = () => {
-  let[state,setstate]=useState(0)
-  let handleclick=()=>{
-    setstate(state+1)
-  }
-   let handleclick1=()=>{
-    setstate(state-1)
-  }
-  return (
-    <div>
-      <h1>{state}</h1>
-      <button on onClick={handleclick}>Inc</button>
-      <button on onClick={handleclick1}>decnc</button>
-    </div>
-  )
-}
-
-export default App
