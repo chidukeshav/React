@@ -1,0 +1,68 @@
+
+[
+  {
+    "id": "1",
+    "title": "Big Buck Bunny",
+    "thumbnailUrl": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
+    "duration": "0:10",
+    "uploadTime": "October 22, 2026",
+    "views": "24969123",
+    "author": "Blender Foundation",
+    "videoUrl": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+    "description": "A short animated film featuring Big Buck Bunny.",
+    "subscriber": "25254545 Subscribers",
+    "isLive": false
+  },
+  {
+    "id": "2",
+    "title": "Elephants Dream",
+    "thumbnailUrl": "https://raw.githubusercontent.com/andreasbotsikas/DemoVideos/master/elephants_dream.jpg",
+    "duration": "0:10",
+    "uploadTime": "October 22, 2026",
+    "views": "12500000",
+    "author": "Blender Foundation",
+    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "description": "A sample video for testing browser playback.",
+    "subscriber": "1500000 Subscribers",
+    "isLive": false
+  },
+  {
+    "id": "3",
+    "title": "Sintel Trailer",
+    "thumbnailUrl": "https://raw.githubusercontent.com/andreasbotsikas/DemoVideos/master/sintel.jpg",
+    "duration": "0:52",
+    "uploadTime": "October 22, 2026",
+    "views": "8500000",
+    "author": "Blender Foundation",
+    "videoUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "description": "A fantasy animated film trailer.",
+    "subscriber": "2000000 Subscribers",
+    "isLive": false
+  },
+  {
+    "id": "4",
+    "title": "Flower Video",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800",
+    "duration": "0:30",
+    "uploadTime": "October 22, 2026",
+    "views": "2500000",
+    "author": "MDN Web Docs",
+    "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "description": "A flower video sample for testing HTML video playback.",
+    "subscriber": "750000 Subscribers",
+    "isLive": false
+  },
+  {
+    "id": "5",
+    "title": "Tears of Steel",
+    "thumbnailUrl": "https://raw.githubusercontent.com/andreasbotsikas/DemoVideos/master/tears_of_steel.png",
+    "duration": "0:30",
+    "uploadTime": "October 22, 2026",
+    "views": "1900000",
+    "author": "Blender Foundation",
+    "videoUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "description": "A sample entry for testing video player layouts.",
+    "subscriber": "500000 Subscribers",
+    "isLive": false
+  }
+]

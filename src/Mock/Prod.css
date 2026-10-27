@@ -1,0 +1,23 @@
+body{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#product{
+    border: 1px solid black;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    
+}
+.pro{
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+}
+#cart{
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+}
