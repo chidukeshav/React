@@ -1,0 +1,11 @@
+{
+  "user": [
+    {
+      "user": "chidu",
+      "password": "122334",
+      "gender": "MALE",
+      "id": "9N-KgWB_1o8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
