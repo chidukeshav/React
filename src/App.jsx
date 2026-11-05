@@ -493,50 +493,138 @@
 // export default App
 
 // form handling
-import axios from 'axios'
-import React, { useState } from 'react'
+// import axios from 'axios'
+// import React, { useState } from 'react'
 
-const App4 = () => {
+// const App4 = () => {
 
-    let[state,setState]=useState({
-        user:"",
-        password:"",
-        gender:""
+//     let[state,setState]=useState({
+//         user:"",
+//         password:"",
+//         gender:""
 
-    })
-    let {user,password,gender}=state
-    let handleChange=(e)=>{
-       let{name,value}=e.target
-       setState({...state,[name]:value})
+//     })
+//     let {user,password,gender}=state
+//     let handleChange=(e)=>{
+//        let{name,value}=e.target
+//        setState({...state,[name]:value})
         
-    }
-    let handleSubmit=async(e)=>{
-        // e.preventDefault()
-        // console.log({...state})
-        try{
-            let payload={user,password,gender}
-            axios.post("http://localhost:4000/user", payload)
-        }catch(err){
-                console.log(err);
+//     }
+//     let handleSubmit=async(e)=>{
+//         // e.preventDefault()
+//         // console.log({...state})
+//         try{
+//             let payload={user,password,gender}
+//             axios.post("http://localhost:4000/user", payload)
+//         }catch(err){
+//                 console.log(err);
                 
-        }
+//         }
 
-    }
+//     }
+//   return (
+//     <div>
+//         <form action="" onSubmit={handleSubmit}>
+//             <label htmlFor="">USER NAME</label>
+//             <input type="text" name="user" id="" onChange={handleChange}/>
+//             <label htmlFor="">PASSWORD</label>
+//             <input type="password" name='password' id=''  onChange={handleChange}/>
+//             <label htmlFor="">GENDER</label>
+//             MALE<input type='radio' name='gender' value="MALE" onChange={handleChange}></input>
+//             FEMALE<input type='radio' name='gender' value="FEMALE" onChange={handleChange}></input>
+//             <input type="submit" value="SUBMIT" />
+//         </form>
+//     </div>
+//   )
+// }
+
+// export default App4
+// *****************************************************************************************************
+
+
+//filehandlinmg
+// import axios from 'axios'
+// import React, { useState } from 'react'
+
+// const App4 = () => {
+
+//     let[state,setState]=useState({
+//         user:"",
+//         password:"",
+//         gender:"",
+//         language:[]
+
+//     })
+//     let {user,password,gender,language}=state
+//     let handleChange=(e)=>{
+//        let{name,value}=e.target
+//        setState({...state,[name]:value})
+        
+//     }
+//     let handleSubmit=async(e)=>{
+//         // e.preventDefault()
+//         // console.log({...state})
+//         try{
+//             let payload={user,password,gender}
+//             axios.post("http://localhost:4000/user", payload)
+//         }catch(err){
+//                 console.log(err);
+                
+//         }
+
+//     }
+//     const handleLanguage = (e) => {
+//     const { value, checked } = e.target;
+
+//     if (checked) {
+//         setState({
+//             ...state,
+//             language: [...state.language, value]
+//         });
+//     } else {
+//         setState({
+//             ...state,
+//             language: state.language.filter((lang) => lang !== value)
+//         });
+//     }
+// };
+//   return (
+//     <div>
+//         <form action="" onSubmit={handleSubmit}>
+//             <label htmlFor="">USER NAME</label>
+//             <input type="text" name="user" id="" onChange={handleChange}/><br></br>
+//             <label htmlFor="">PASSWORD</label>
+//             <input type="password" name='password' id=''  onChange={handleChange}/><br></br>
+//             <label htmlFor="">GENDER</label>
+//             MALE<input type='radio' name='gender' value="MALE" onChange={handleChange}></input>
+//             FEMALE<input type='radio' name='gender' value="FEMALE" onChange={handleChange}></input><br></br>
+//             <label htmlFor="">LANGUAGE</label><br></br>
+//             <label htmlFor="">Kannada</label><input type='checkbox' name='language' value="Kannada" id=''onChange={ handleLanguage}></input><br></br>
+//             <label htmlFor="">English</label><input type='checkbox' name='language' value="English" id=''onChange={ handleLanguage}></input><br></br>
+//             <label htmlFor="">hindi</label><input type='checkbox' name='language' value="hindi" id=''onChange={ handleLanguage}></input><br></br>
+//             <label htmlFor="">Malayalam</label><input type='checkbox' name='language' value="Malayalam" id=''onChange={handleLanguage}></input><br></br>
+//             <input type="submit" value="SUBMIT" />
+//         </form>
+//     </div>
+//   )
+// }
+
+// export default App4
+
+
+// ***********************************************************
+
+
+
+
+
+
+import React from 'react'
+
+const App = () => {
   return (
-    <div>
-        <form action="" onSubmit={handleSubmit}>
-            <label htmlFor="">USER NAME</label>
-            <input type="text" name="user" id="" onChange={handleChange}/>
-            <label htmlFor="">PASSWORD</label>
-            <input type="password" name='password' id=''  onChange={handleChange}/>
-            <label htmlFor="">GENDER</label>
-            MALE<input type='radio' name='gender' value="MALE" onChange={handleChange}></input>
-            FEMALE<input type='radio' name='gender' value="FEMALE" onChange={handleChange}></input>
-            <input type="submit" value="SUBMIT" />
-        </form>
-    </div>
+    <div>App</div>
   )
 }
 
-export default App4
-
+export default App

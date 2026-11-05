@@ -5,6 +5,24 @@
       "password": "122334",
       "gender": "MALE",
       "id": "9N-KgWB_1o8"
+    },
+    {
+      "user": "chidu",
+      "password": "dfgfg",
+      "gender": "MALE",
+      "id": "p1kyU7V1Cro"
+    },
+    {
+      "user": "chidu",
+      "password": "000",
+      "gender": "MALE",
+      "id": "hw8WEogtyes"
+    },
+    {
+      "user": "chidu",
+      "password": "111",
+      "gender": "MALE",
+      "id": "1YnasLajz4w"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
